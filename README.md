@@ -1,6 +1,6 @@
 # Django Employee Information Dashboard
 
-A simple Django-based web app that displays employee information in two formats:
+A simple Django-based practice project that displays employee information in two formats:
 - As a **responsive HTML table**.
 - As **stylized employee cards**.
 
