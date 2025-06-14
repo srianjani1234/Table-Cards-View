@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+  
+  <table border="2px solid red" style="width: 100%;">
+    <tr>
+      <th>Ename</th>
+      <th>EMPId</th>
+      <th>Phone_no</th>
+      <th>Role</th>
+      <th>Location</th>
+      <th>Salary</th>
+      <th>DeptNo</th>
+      <th>Hiredate</th>
+      <th>MGRID</th>
+      <th>Shift</th>
+      <th>PersonalMailId</th>
+      <th>Gender</th>
+      <th>OfficialMailId</th>
+      <th>Experience</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+      <td>{{i.Ename}}</td>
+      <td>{{i.EMPId}}</td>
+      <td>{{i.Phone_no}}</td>
+      <td>{{i.Role}}</td>
+      <td>{{i.Location}}</td>
+      <td>{{i.Salary}}</td>
+      <td>{{i.DeptNo}}</td>
+      <td>{{i.Hiredate}}</td>
+      <td>{{i.MGRID}}</td>
+      <td>{{i.Shift}}</td>
+      <td>{{i.PersonalMailId}}</td>
+      <td>{{i.Gender}}</td>
+      <td>{{i.OfficialMailId}}</td>
+      <td>{{i.Experience}}</td>
+
+
+      
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock content %}
